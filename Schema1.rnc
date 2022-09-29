@@ -11,7 +11,7 @@ when = attribute when {"1951"}
 
 poem = element poem {title, lineGroup+}
 lineGroup = element lineGroup {line+, text}
-line = element line {n, text*, placeName*, motif*, place*, text}
+line = element line {n, text*, placeName*, motif*, place*, text*}
 
 n = attribute n {xsd:integer}
 placeName = element placeName {ref, text*}

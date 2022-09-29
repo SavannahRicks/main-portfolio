@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="Schema1.rnc" type="application/relax-ng-compact-syntax"?>
+<!-- is there a way to comment in the schema? -->
 <xml>
     <source>
         <title level="book">Montage of a Dream Deferred</title>
@@ -9,10 +10,11 @@
     <poem>
         <title level="inner">Good Morning</title>
         <lineGroup>
+<!-- does my line element look alright in my schema? -->
             <line n="1">Good morning, daddy!</line>
             <line n="2">I was born here, he said,</line>
             <line n="3">watched <placeName ref="NYC-Harlem">Harlem</placeName> grow</line>
-<!-- Is there a better way for listing different ref attributes in the schema -->
+<!-- Is there a better way for listing different ref attributes in the schema? -->
             <line n="4">until colored folks spread</line>
             <line n="5">from river to river</line>
             <line n="6">across the middle of <placeName ref="NYC-Man">Manhattan</placeName></line>
