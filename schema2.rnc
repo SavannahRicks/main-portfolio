@@ -1,0 +1,19 @@
+start = root
+root = element root {metaData, intro, para*, source}
+metaData = element metaData {text}
+
+intro = element intro {mixed{where*, ship*, date*},text*}
+where = element where {mixed{ship}, text}
+ship = element ship {text}
+date = element date {text}
+
+para = element para {mixed{country*, organization*, feeling*, city*, adjective*, place*}*,text*}
+country = element country {text}
+organization = element organization {text}
+place = element place {mixed{city*},text}
+city = element city {text}
+adjective = element adjective {n*, text}
+feeling = element feeling {mixed {n, adjective*}, text}
+n = attribute n {xsd:integer}
+
+source = element source {text}
