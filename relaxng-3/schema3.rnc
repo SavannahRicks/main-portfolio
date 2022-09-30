@@ -1,0 +1,23 @@
+start = root
+root = element root {poem, copyright}
+
+
+poem = element poem {mixed {num, para}+}
+
+num = element num {text}
+para = element para {n, line+}
+line = element line {n, (aPattern, text*)+}
+n = attribute n {xsd:integer}
+
+aPattern = (mixed{bPattern})
+bPattern = (fall*, adj*, chall*, indent*)
+fall = element fall {aPattern,text}
+adj = element adj {aPattern, text}
+indent = element indent {aPattern, text}
+chall = element chall {aPattern, text}
+
+copyright = element copyright {mixed{copyrightTag, year, author, publisher}, text}
+copyrightTag = element copyrightTag {text}
+year = element year {text}
+author = element author {text}
+publisher = element publisher {text}

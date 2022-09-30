@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <num> 1 </num>
+    <poem>
+        <para n="1">
+            <line n="1">Every <fall>October</fall> it becomes important, no, necessary </line>
+            <line n="2">to see the <fall>leaves</fall><adj>turning</adj>, to be surrounded </line>
+            <line n="3">by <fall>leaves</fall><adj>turning</adj>; it's not just the symbolism, </line>
+            <line n="4">to confront in the <fall>death of the year</fall> your death, </line>
+            <line n="5">one <adj>blazing</adj><fall>farewell appearance</fall>, though the irony </line>
+            <line n="6">isn't lost on you that nature is most <adj>seductive</adj></line>
+            <line n="7">when it's about to die, <adj>flaunting</adj> the <adj>dazzle</adj> of its </line>
+            <line n="8"><adj>incipient</adj> exit, an ending that at least so far </line>
+            <line n="9">the effects of human progress (<chall.>pollution, acid rain</chall.>) </line>
+            <line n="10">have not yet <adj>frightened</adj> you enough to make you believe </line>
+            <line n="11">is real; that is, you know this ending is a deception </line>
+            <line n="12">because of course <fall>nature is always renewing itself</fall>— </line>
+            <line n="13">
+                <indent><fall>the trees don't die, they just pretend</fall>, </indent>
+            </line>
+            <line n="14">
+                <indent><fall>go out in style, and return in style: a new style</fall>. </indent>
+            </line>
+        </para>
+        <num> 2 </num>
+        <para n="2">
+            <line n="1">Is it deliberate <chall.>how far they make you go </chall.></line>
+            <line n="2"><chall.>especially if you live in the city</chall.> to get far </line>
+            <line n="3">enough <chall.>away from home</chall.> to see not just trees </line>
+            <line n="4"><fall>but only trees?</fall> The <chall.><adj>boring</adj>
+                    highways,roadsigns</chall.>, high </line>
+            <line n="5">speeds, <chall.>10-axle trucks passing you </chall.>as if they were </line>
+            <line n="6">in an even greater hurry than you to look at leaves: </line>
+            <line n="7">so you <chall.>drive in terror for literal hours </chall.>and it looks </line>
+            <line n="8">like <chall.>rain, or snow</chall.>, but it's probably just clouds </line>
+            <line n="9">(<fall><chall.>too cloudy to see any color?</chall.></fall>) and you wonder, </line>
+            <line n="10">given the poverty of your memory, which road had the </line>
+            <line n="11">most color last year, but it doesn't matter since </line>
+            <line n="12">
+                <chall.>you're probably <fall>too late anyway, or too early</fall>— </chall.>
+            </line>
+            <line n="13">
+                <indent>
+                    <chall.>whichever road you take will be the wrong one</chall.>
+                </indent>
+            </line>
+            <line n="14">
+                <indent>and you've probably <chall.>come all this way for nothing</chall.>.</indent>
+            </line>
+        </para>
+        <num> 3 </num>
+
+        <para n="3">
+            <line n="1">You'll be <chall.>driving along <adj>depressed</adj></chall.> when suddenly </line>
+            <line n="2">a cloud will move and the sun will <adj>muscle</adj> through </line>
+            <line n="3">and <fall><adj>ignite</adj> the hills</fall>. It may not last. Probably </line>
+            <line n="4">won't last. But for a moment the whole world </line>
+            <line n="5">comes to. <fall>Wakes up. Proves it lives. It lives</fall>— </line>
+            <line n="6">
+                <fall>red, yellow, orange, brown, russet, ocher, vermilion,</fall>
+            </line>
+            <line n="7">
+                <fall>gold. Flame and rust. Flame and rust, the permutations </fall>
+            </line>
+            <line n="8">
+                <fall>of burning. You're on fire. Your eyes are on fire.</fall>
+            </line>
+            <line n="9">It won't last, you don't want it to last. You </line>
+            <line n="10">can't stand any more. <fall>But you don't want it to stop.</fall></line>
+            <line n="11"><fall>It's what you've come for</fall>. It's what you'll </line>
+            <line n="12">come back for. <fall>It won't stay with you</fall>, but you'll </line>
+            <line n="13">
+                <indent>
+                    <fall>remember that it felt like nothing else you've felt </fall>
+                </indent>
+            </line>
+            <line n="14">
+                <indent>
+                    <fall>or something you've felt that also didn't last.</fall>
+                </indent>
+            </line>
+        </para>
+    </poem>
+    <copyright>Copyright <copyrightTag>©</copyrightTag>
+        <year>1992</year> by <author>Lloyd Schwartz</author>. From Goodnight, Gracie (<publisher>The
+            University of Chicago Press</publisher>, 1992). Appears courtesy of the author.
+    </copyright>
+</root>
+
+<!-- dont use attributes to number individual lines next time -->
