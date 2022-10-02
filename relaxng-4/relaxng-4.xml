@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema4.rnc" type="application/relax-ng-compact-syntax"?>
+<xml>
+    <title>Gingersnaps</title>
+    <desc>These crunchy, spicy rounds with their cracked, sugary tops are equally at home dunked in
+        tea, coffee, or milk, and frequently enjoyed during the November/December holiday season.
+        But they're just as welcome on a mellow, golden, late-September afternoon, with a
+        comfortable lounge chair and a large glass of fresh-squeezed lemonade.</desc>
+    <stat>
+        <prep>Prep <time num="12" unit="min">12 mins</time></prep>
+        <bake>Bake <time from="11" to="13" unit="min">11 to 13 mins</time></bake>
+        <total>Total <time about="23" unit="min">23 mins</time></total>
+        <yield>Yield about <amt num="5" unit="dozen">5 dozen </amt>cookies</yield>
+    </stat>
+    <lis>
+        <h1>Gingersnaps</h1>
+        <h2>Ingredients</h2>
+        <h3>Cookies</h3>
+        <ing name="vgsh"><amt num=".75" unit="cup">3/4 cup </amt><altamt num="138" unit="gram"
+                >(138g) </altamt>vegetable shortening<star line="28">*</star></ing>
+        <ing name="sug"><amt num="1" unit="cup">1. cup </amt><altamt num="198" unit="gram">(198g)
+            </altamt>granulated sugar</ing>
+        <ing name="salt"><amt num=".5" unit="tspn">1/2 teaspoon </amt>salt</ing>
+        <ing name="bsoda"><amt num="2" unit="tspn">2. teaspoons </amt>baking soda</ing>
+        <ing name="egg">
+            <amt num="1" unit="egg">1. large egg</amt>
+        </ing>
+        <ing name="mol"><amt num=".33" unit="cup">1/3 cup </amt><altamt num="113" unit="gram">(113g)
+            </altamt>molasses</ing>
+        <ing name="apfl"><amt num="2.33" unit="cup">2. 1/3 cups </amt><altamt num="280" unit="gram"
+                >(280g) </altamt>King Arthur Unbleached All-Purpose Flour</ing>
+        <ing name="gin"><amt from="1" to="2" unit="tspn">1. to 2 teaspoons </amt>ginger</ing>
+        <ing name="clov"><amt num=".5" unit="tspn">1/2 teaspoon </amt>cloves</ing>
+        <ing name="cin"><amt num="1" unit="tspn">1. teaspoon </amt>cinnamon</ing>
+        <note>* Can you substitute butter for the vegetable shortening? Yes; but the cookies will be
+            soft, not crisp.</note>
+        <h3>Coating</h3>
+        <ing name="sug"><amt num=".25" unit="cup">1/4 cup </amt><altamt num="50" unit="gram">(50g)
+            </altamt>granulated sugar</ing>
+        <ing name="sug"><amt num="1" unit="tspn">1. teaspoon </amt>cinnamon</ing>
+    </lis>
+    <instr>
+        <h2>Instructions</h2>
+        <st>Preheat the oven to <amt num="375" unit="degfar">375Â°F. </amt>Lightly grease (or line
+            with parchment) two baking sheets.</st>
+        <st>Beat together the <mix>shortening, sugar, salt, and baking soda.</mix></st>
+        <st>Beat in the <mix>egg, then the molasses.</mix></st>
+        <st>Add the <mix>flour and spices</mix>, beating to make a smooth, fairly stiff dough.</st>
+        <st>To make the coating, combine the <mix>sugar and cinnamon</mix>, and place in a shallow
+            pan or dish.</st>
+        <st>Drop the dough in <balls num="1" unit="inch">1" </balls>balls into the cinnamon-sugar
+            mixture; a teaspoon cookie scoop is perfect here.</st>
+        <st>Roll the balls in the sugar to coat, then transfer them to the prepared baking sheets,
+            leaving at least <space num="1.5" unit="inch">1 1/2" </space>between them; they'll
+            spread as they bake.</st>
+        <st>Bake the cookies for <time num="11" unit="min">11 minutes</time>, for cookies that are
+            crisp around the edges, and "bendy" in the center. Bake for <time num="13" unit="min">13
+                minutes</time>, for cookies that are crisp/crunchy all the way through.</st>
+        <st>Remove the cookies from the oven, and cool right on the pan, or on a rack. </st>
+        <st>Cool completely, then store tightly wrapped, at room temperature.</st>
+    </instr>
+</xml>

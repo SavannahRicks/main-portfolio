@@ -1,0 +1,40 @@
+start = xml
+xml = element xml {title, desc, stat, lis, instr}
+
+title = element title {text}
+desc = element desc {text}
+stat = element stat {prep, bake, total, yield}
+
+
+prep = element prep {bPattern}
+bake = element bake {bPattern}
+total = element total {bPattern}
+yield = element yield {bPattern}
+time = element time {aPattern, text}
+amt = element amt {aPattern, text}
+
+lis = element lis {mixed{h1?, h2?, h3+, ing+, note?}*}
+h1 = element h1 {text}
+h2 = element h2 {text}
+h3 = element h3 {text}
+ing = element ing {name, bPattern, text}
+name = attribute name {text}
+star = element star {line, text}
+line = attribute line {xsd:integer}
+altamt = element altamt {aPattern, text}
+note = element note {text}
+
+instr = element instr {h2, st+}
+st = element st {bPattern*, text}
+mix = element mix {text}
+balls = element balls {aPattern, text}
+space = element space {aPattern, text}
+
+aPattern = ((num | (from, to) | about), unit)
+num = attribute num {xsd:double}
+from = attribute from {xsd:integer}
+to = attribute to {xsd:integer}
+about = attribute about {xsd:integer}
+unit = attribute unit {text}
+
+bPattern = (mixed{mix?, space?, star?, time*, amt?, altamt?, balls?}*,text)
