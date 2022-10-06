@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+
+   <text>
+      <body>
+         <head><l><date when="1955-06-13">June 13, 1955</date></l>
+            <l><name>Mrs. <reg>Mary B. Behrend</reg></name></l>
+            <address>
+               <street>21 West Putnam Avenue</street>
+               <name type="city">Greenwich, </name>
+               <region>Conn.</region>
+            </address>
+         </head>
+         <p><l>Dear <rs type="person">Mrs. Behrend:</rs></l>
+            <l>In reference to your recent letters, I offer he following comments--</l></p>
+         <p n="1"><l>We would be most pleased to have <rs type="person">Mr. Paul Laver</rs> from the
+               Cemetery do certain </l>
+            <l>planting around the entrance to the <rs type="plac">Behrend Center</rs> campus. We
+               understand </l>
+            <l>that this planting will be done by utilising the existing shrubbery in the </l>
+            <l>formal gardens. It is also my understanding that you will remimburse <name>Mr
+                  Laven</name>
+            </l>
+            <l>for his labors only for the planting around the enterance and for no other plant<pc
+                  force="inter">-</pc></l>
+            <l>ing. If you have not not already done so, I would suggest that you contact <rs
+                  type="person">Mr. Day</rs></l>
+            <l>informing him of your desires to have <name>Mr. Laver</name> do the above mentioned
+               work.</l></p>
+         <p n="2"><l>Insofar as the new building is concerned, we do not plan ot proceed with
+               this</l>
+            <l>project this year. We have not as yet heard from <rs type="org">General Electric</rs>
+               as to their </l>
+            <l>intention of us doing their training program this fall. It will be impossible at </l>
+            <l>this late date to complete any building arrangemants for the Fall term, con<pc
+                  force="inter">-</pc></l>
+            <l>sequently we have delayed any action on a new building of this present year. </l>
+            <l>We, however, plan to spend approximatly $25,000.00 completing the other </l>
+            <l>half of the barn for utilization as classrooms.</l></p>
+         <p n="3"><l>We have located some of the lights for the living room which are in need of
+               repair.</l>
+            <l>At the present time we will investigate the repair of these lights and I will re<pc
+                  force="inter">-</pc></l>
+            <l>port to you at a later date as to whether or not they can be effectively
+               repaired.</l>
+         </p>
+         <p n="4"><l>We are making arrangements to erect a wrought iron rail around the case in
+               which</l>
+            <l>the <name type="place">Niagara</name> is desplayed. Quite a few people have commented
+               about the ship and </l>
+            <l>have visited us with the express purpose of viewing it.</l></p>
+         <p n="5"><l>Under separate cover we are sending you the television films of the
+               presentation</l>
+            <l>of the Flagship. These films can be shown on a standard <measure>16mm</measure>.
+               projector.</l>
+         </p>
+         <p n="6"><l>In reference to the heating of the swimming pool, I have talked on two
+               different</l>
+            <l>occasions with <name type="person">Mr. Scobell</name> about completing the project.
+               As yet he has done </l>
+            <l>nothing to heat the pool with the exception of having ordered a piece of equip<pc
+                  force="inter">-</pc></l>
+            <l>ment that is needed to put the furnace in the immediate future to complete
+            it.</l></p>
+         <p n="7"><l>In reference to the scholarships, as a result of our last <orgName>Advisory
+                  Board</orgName> meeting,</l>
+            <l>Mr. Nick appointed a new <orgName>Scholarship Committee</orgName>, consisting of <rs
+                  type="person">Jerry Stokes</rs>, Chair-</l>
+            <l>man, <rs type="person">William Hamilton </rs>and <rs type="person">John Zern</rs>. I
+               have had one meeting with <name>Mr. Stokes </name>and </l>
+            <l>we are planning to arrange for a number of scholarships which will be available </l>
+            <l>by <date>September 1956</date>. Our scholarship fund at present has been consumed so
+               that </l>
+            <l>there is only $650.00 remaining in this fund. We have given one scholarship </l>
+            <l>to a <name type="place">McDowell High School </name>student for <date>September
+                  1955</date>. The scholarship fund </l>
+            <l>has not been generally advertised this year because of the small amount of </l>
+            <l>money available. We have not in the past had scholarships that were specifically </l>
+            <l>designated as <orgName>Protestant scholarships</orgName>. Inasmuch as we are a state
+               university</l>
+            <l>we do not feel that it would be ethical to differentiate as to religion or </l>
+            <l>race in the issuance of a scholarship. I will keep you informed of the activities </l>
+            <l>of this committee and what prograss they make. I am quite sure that we will be</l>
+            <l>building the scholarship fund to the point where at least one scholarship will</l>
+            <l>be available to all eleven of the area high schools each year. Generally speak-</l>
+            <l>ing scholarships are in the amount of $100.00 per year, per student.</l></p>
+         <p n="8"><l><rs type="person">Ross P. Wright </rs>of <orgName>Reed Mfg. Company
+               </orgName>has sent several copies of letters that</l>
+            <l>were supposedly written by <rs type="person">Commodore Perry </rs>on the deck of the
+                  <name type="place">Ship Niagara </name>on </l>
+            <l>the afternoon of his victory. We plan to have these copies framed and placed </l>
+            <l>in <name type="place">Erie Hall </name>along with the Flagship.</l></p>
+         <p n="9"><l>I hope this letter finds you in good health and enjoying the summer. Please</l>
+            <l>give my kindest regards to <rs type="person">Gail</rs>. Our family is well and in
+               good health.</l>
+            
+         </p>
+         <closer><salute>Cordially yours, </salute>
+            <space/>
+            <signed>Irvin H.Kochel</signed>
+            <roleName>Administrative Head</roleName>
+            <space/>
+            P.S. Thanks very much for the London Illustrated News. We will put these 
+            to good use in the Library at Behrend Center.
+         </closer>
+      </body>
+   </text>
+</TEI>
