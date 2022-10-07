@@ -15,10 +15,16 @@
             <p>Publication Information</p>
          </publicationStmt>
          <sourceDesc>
-            <p> From the PSU Behrend Archives. A letter made from Irvin Kochel to Mary Behrendin
-               1955. </p>
+            <msDesc>
+               <msIdentifier>
+                  <repository></repository>
+               </msIdentifier>
+            </msDesc>
+            <!--  <p> From the PSU Behrend Archives. A letter made from Irvin Kochel to Mary Behrendin
+               1955. </p>-->
             <!-- Information about the source -->
          </sourceDesc>
+         
          
       </fileDesc>
    </teiHeader>
