@@ -15,14 +15,24 @@
             <p>Publication Information</p>
          </publicationStmt>
          <sourceDesc>
+            
             <msDesc>
                <msIdentifier>
-                  <repository></repository>
+                  <repository>Penn State Erie, Behrend College Library Archives</repository>
                </msIdentifier>
+               <physDesc>
+                  <handDesc>
+                     <handNote xml:id="typedLet" medium="print">A letter typed on both sides of thin, almost seethrough, paper</handNote>
+                     
+                  </handDesc>
+               </physDesc>
+               
             </msDesc>
+            
             <!--  <p> From the PSU Behrend Archives. A letter made from Irvin Kochel to Mary Behrendin
                1955. </p>-->
             <!-- Information about the source -->
+            
          </sourceDesc>
          
          
@@ -32,7 +42,9 @@
 
    <text>
       <body>
-         <head><l><date when="1955-06-13">June 13, 1955</date></l>
+         <head>
+            <pb/>
+            <l><date when="1955-06-13">June 13, 1955</date></l>
             <l><name>Mrs. <reg>Mary B. Behrend</reg></name></l>
             <address>
                <street>21 West Putnam Avenue</street>
@@ -82,7 +94,9 @@
                Committee</orgName>, consisting of <rs type="person">Jerry Stokes</rs>, Chair-<lb/>
             man, <rs type="person">William Hamilton </rs>and <rs type="person">John Zern</rs>. I
             have had one meeting with <name>Mr. Stokes </name>and <lb/> we are planning to arrange
-            for a number of scholarships which will be available <lb/> by <date>September
+            for a number of scholarships which will be available <lb/>
+            <pb/>
+            by <date>September
                1956</date>. Our scholarship fund at present has been consumed so that <lb/> there is
             only $650.00 remaining in this fund. We have given one scholarship <lb/> to a <name
                type="place">McDowell High School </name>student for <date>September 1955</date>. The
