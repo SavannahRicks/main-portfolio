@@ -1,0 +1,47 @@
+# DIGIT 110 RELAX NG TEST INSTRUCTIONS:  
+# * Save these test files according to our standard file naming conventions for Canvas submissions.
+# * Make the schema well-formed and document with  # comments where you made change(s). 
+# * Then, associate the schema with the XML file we have provided for the exam.
+# * Next, correct the schema code so that it validates the XML (happy green oXygen for both documents) and document briefly with # comments what you changed and why.
+#  **NOTE**: DO NOT CHANGE the markup in the XML file, except to add your schema line!
+#
+# SUBMITTING YOUR EXAM:
+# When you are finished, upload BOTH the schema and the XML file to Canvas using the posted upload point for this exam. 
+# You may zip the files to submit them just as you have done for homework assignments.
+
+start = xml
+xml = element xml {metadata, recipe}
+metadata = element metadata {title, author, editor, source, time, yield}#7: yield element was not here at all
+title = element title {text}#1: text was misspelled
+author = element author {id, text}
+editor = element editor {id, text}
+source = element source {url, text}#6: did not include url
+time = element time {dur, text}
+yield = element yield {text}
+id = attribute id {xsd:ID}#4: attribute id used to be 'is'
+url = attribute url {xsd:anyURI}
+dur = attribute dur {xsd:duration}
+
+recipe = element recipe {ingList, prep}
+ingList = element ingList {heading, ing+}
+heading = element heading {text}
+ing = element ing {id, meas?, unit?, mixed{alt*}}
+alt = element alt {meas, unit, text}
+meas = attribute meas {xsd:float}
+unit = attribute unit {"cup" | "T" | "t"  | "F" | "C" | "inch" | "pint"}#5: pint was not included
+
+prep = element prep {heading, step+}#8: step was using a ? instead of a +
+step = element step {n, mixed{(combine | equip | equipUse | ingUse)*}}#10: surrounded elements in parenthases to be less stricted in the order of what elements might show up first
+equip = element equip {id, mixed{(equip | equipUse | setting | time | temp | size)*}}#9: temp element was not included #12: added size to list of elements #14: added * to mixed because there can be more than one element in equip
+temp = element temp {meas, unit, text}
+size = element size {depth, unit, text}
+depth = attribute depth {xsd:float}
+equipUse = element equipUse {ref, mixed{(temp | size | equip | equipUse | ingUse | setting | time)*}}
+setting = element setting {text}#2: setting element was not defined
+ingUse = element ingUse {ref, meas?, unit?, text}#11: gave meas and unit ?
+ref = attribute ref {xsd:IDREFS}
+combine = element combine {ref, mixed{ingUse}, text}#13: added mixed{ingUse} because it can show up anywhere in combine
+n = attribute n {xsd:integer}#3: changed to xsd:integer
+
+
+
