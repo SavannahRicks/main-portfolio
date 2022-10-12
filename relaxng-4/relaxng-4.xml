@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="schema4.rnc" type="application/relax-ng-compact-syntax"?>
+
+<!-- 👍 The link works! I am admiring how you have organized your GitHub repo to handle both DIGIT 100 and 110. :-)
+Elisa Eileen Beshero-Bondar, Oct 10 at 9:12am
+👏 Brilliant work on the gingersnaps schema, Savannah! I'm impressed that you worked out how to create a pattern, 
+so you don't have to repeat a complicated structure over and over: I like your 
+bPattern very much. I notice you didn't try xsd:ID and xsd:IDREFS here, but if 
+you want to try applying them: you try making your @name attribute be the xsd:ID 
+datatype: it would just make that name value be a distinct identifier to help mark
+the moment when you provide lots of detail about it. Then, if you add more markup 
+down in the steps (I know, you already have lots of markup so this is just for fun
+now): you could provide another element with an attribute to hold *mentions* of 
+each specific ingredient, and that datatype for the attribute would be xsd:IDREF 
+or xsd:IDREFS if you want to mention multiple of them at once: like <ingredUse 
+ref="cin gin clov">spices</ingredUse>.
+-->
+
 <xml>
     <title>Gingersnaps</title>
     <desc>These crunchy, spicy rounds with their cracked, sugary tops are equally at home dunked in

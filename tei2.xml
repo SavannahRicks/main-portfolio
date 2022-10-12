@@ -4,38 +4,44 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader><!-- I can't seem to figure out what tags i should create to be able to place a handDesc or handNote element in. -->
-              <!-- I keep running into dead ends when backtracking what tree of elements to include before incerting the hand elements -->
+   <teiHeader>
+      <!-- I can't seem to figure out what tags i should create to be able to place a handDesc or handNote element in. -->
+      <!-- I keep running into dead ends when backtracking what tree of elements to include before incerting the hand elements -->
       <fileDesc>
          <titleStmt>
             <title>Irvin Letter</title>
             <!-- Title -->
+            <editor>Savannah Ricks</editor>
          </titleStmt>
          <publicationStmt>
             <p>Publication Information</p>
          </publicationStmt>
+         <seriesStmt>
+            <p>One letter of a series of letters shared between Mary Behrend and Irvin Kochel</p>
+         </seriesStmt>
          <sourceDesc>
-            
+
             <msDesc>
                <msIdentifier>
                   <repository>Penn State Erie, Behrend College Library Archives</repository>
                </msIdentifier>
                <physDesc>
                   <handDesc>
-                     <handNote xml:id="typedLet" medium="print">A letter typed on both sides of thin, almost seethrough, paper</handNote>
-                     
+                     <handNote xml:id="typedLet" medium="print">A letter typed on both sides of
+                        thin, almost seethrough, paper</handNote>
+
                   </handDesc>
                </physDesc>
-               
+
             </msDesc>
-            
+
             <!--  <p> From the PSU Behrend Archives. A letter made from Irvin Kochel to Mary Behrendin
                1955. </p>-->
             <!-- Information about the source -->
-            
+
          </sourceDesc>
-         
-         
+
+
       </fileDesc>
    </teiHeader>
 
@@ -44,16 +50,16 @@
       <body>
          <head>
             <pb/>
-            <l><date when="1955-06-13">June 13, 1955</date></l>
-            <l><name>Mrs. <reg>Mary B. Behrend</reg></name></l>
+            <date when="1955-06-13">June 13, 1955</date>
+            <name>Mrs. <reg>Mary B. Behrend</reg></name>
             <address>
                <street>21 West Putnam Avenue</street>
                <name type="city">Greenwich, </name>
                <region>Conn.</region>
             </address>
          </head>
-         <p>Dear <rs type="person">Mrs. Behrend:</rs><lb/> In reference to your recent letters, I
-            offer he following comments--</p>
+         <p>Dear <rs type="person">Mrs. Behrend:</rs><lb/> In reference to your recent letters,
+             offer he following comments--</p><!-- salutaion? -->
          <lb/>
          <p n="1">We would be most pleased to have <rs type="person">Mr. Paul Laver</rs> from the
             Cemetery do certain <lb/> planting around the entrance to the <rs type="plac">Behrend
@@ -95,21 +101,20 @@
             man, <rs type="person">William Hamilton </rs>and <rs type="person">John Zern</rs>. I
             have had one meeting with <name>Mr. Stokes </name>and <lb/> we are planning to arrange
             for a number of scholarships which will be available <lb/>
-            <pb/>
-            by <date>September
-               1956</date>. Our scholarship fund at present has been consumed so that <lb/> there is
-            only $650.00 remaining in this fund. We have given one scholarship <lb/> to a <name
-               type="place">McDowell High School </name>student for <date>September 1955</date>. The
-            scholarship fund <lb/> has not been generally advertised this year because of the small
-            amount of <lb/> money available. We have not in the past had scholarships that were
-            specifically <lb/> designated as <orgName>Protestant scholarships</orgName>. Inasmuch as
-            we are a state university<lb/> we do not feel that it would be ethical to differentiate
-            as to religion or <lb/> race in the issuance of a scholarship. I will keep you informed
-            of the activities <lb/> of this committee and what prograss they make. I am quite sure
-            that we will be<lb/> building the scholarship fund to the point where at least one
-            scholarship will<lb/> be available to all eleven of the area high schools each year.
-            Generally speak<pc force="inter">-</pc><lb/> ing scholarships are in the amount of
-            $100.00 per year, per student.<lb/></p>
+            <pb/> by <date>September 1956</date>. Our scholarship fund at present has been consumed
+            so that <lb/> there is only $650.00 remaining in this fund. We have given one
+            scholarship <lb/> to a <name type="place">McDowell High School </name>student for
+               <date>September 1955</date>. The scholarship fund <lb/> has not been generally
+            advertised this year because of the small amount of <lb/> money available. We have not
+            in the past had scholarships that were specifically <lb/> designated as
+               <orgName>Protestant scholarships</orgName>. Inasmuch as we are a state
+            university<lb/> we do not feel that it would be ethical to differentiate as to religion
+            or <lb/> race in the issuance of a scholarship. I will keep you informed of the
+            activities <lb/> of this committee and what prograss they make. I am quite sure that we
+            will be<lb/> building the scholarship fund to the point where at least one scholarship
+            will<lb/> be available to all eleven of the area high schools each year. Generally
+               speak<pc force="inter">-</pc><lb/> ing scholarships are in the amount of $100.00 per
+            year, per student.<lb/></p>
          <p n="8"><rs type="person">Ross P. Wright </rs>of <orgName>Reed Mfg. Company </orgName>has
             sent several copies of letters that<lb/> were supposedly written by <rs type="person"
                >Commodore Perry </rs>on the deck of the <name type="place">Ship Niagara </name>on

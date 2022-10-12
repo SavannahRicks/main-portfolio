@@ -2,6 +2,32 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!-- Okay, so you're trying to use objectDesc! That's a good choice, and yes, it's 
+   tricky to sort out how to work with it. It belongs in the teiHeader portion of 
+   the document, and the hard part is figuring out *where*. So, objectDesc goes 
+   inside a physDesc, and *that* goes inside an msDesc (for manuscript description).
+   Here's an example: 
+   https://www.tei-c.org/Vault/P5/2.2.0/doc/tei-p5-doc/en/html/examples-objectDesc.html 
+   The msDesc itself has a special place in the teiHeader! It goes inside the 
+   sourceDesc element, and *that* sits inside the fileDesc that you can see in 
+   oXygen. So...let's sort this out: 
+   <teiHeader> <fileDesc> .... <sourceDesc> <msDesc> ... <objectDesc>.... 
+   (I didn't put in the end tags, but I hope the indentation holds so you 
+   can see how those are nested.) The TEI Header has lots of rules to try to sort out
+   ...let's try this encoding out in class today and see if we can get the objectDesc working.
+   
+Elisa Eileen Beshero-Bondar, Oct 7 at 8:54am
+NOTE: I would probably not recommend the <p> element for the lines of Molly's snowshoes poem...
+
+Elisa Eileen Beshero-Bondar, Oct 7 at 8:54am
+Savannah: I'm revisiting your code this morning to prepare our TEI schema exercise, 
+and noticed the error on your div2 element. The problem is that when you use numbered
+div elements, <div1> and <div2>, TEI expects <div2> to be *nested inside* <div1>. 
+You're using them to number a sequence side-by-side. For that, I'd recommend just 
+<div n="1> and <div n="2"> which wouldn't designate a *level* in the structure of the document. 
+-->
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
