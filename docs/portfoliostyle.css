@@ -67,6 +67,18 @@ figcaption{font-size: 13px}
   text-decoration:underline;
   line-height: .1}
   
+.ref {text-align:left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffe6;
+  width: 1000px;
+  border: 5px solid #e6e6ff;
+  padding: 10px 20px 50px 20px;
+  }
+  .ref h3 {text-align: center}
+  .ref p {text-indent: 50px;}
+  
 
 .cent {text-align: center}
 
