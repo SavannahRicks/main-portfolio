@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <document type="article">
+    <!-- no quotes around article -->
+    <title> “The Hole &lt; The Sum of its Parts”</title>
+    <!-- the < is a special character that needed to be changed to &lt; -->
+    <date>September 2014</date>
+    <pages start="636" end="645">
+      <summary>This brilliantly-written and wittily insightful article clearly disproves the
+        hypothesis tested in <title><bold>I’ve Got the Whole in me Pocket: Spaces in
+          Space</bold></title>
+        <!-- The bold end tag was in the wrong order with the title end tag --> describing the
+        behavior of pockets of spacetime in close proximity to black holes!!</summary>
+      <!-- there was a random & in the text -->
+    </pages>
+    <!-- there was no pages end tag -->
+  </document>
+  <!-- there was no back slash in the end tag -->
+  <document type="poem">
+    <!-- the type was unnecessarily in its own tag -->
+    <title>Three quarks for Muster Mark</title>
+    <!-- there was an unnecessary backslash in the start tag -->
+    <date>August 2013</date>
+    <pages start="238" end="238 or 239">Text Box</pages>
+    <!-- the start attribute was missing and the end tag was misspelled -->
+    <summary>Covers the ‘Urban Legend’ about the naming of the primary sub-atomic particle
+      ;-)</summary>
+  </document>
+  <!-- there was no back slash in the end tag -->
+</root>

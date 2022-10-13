@@ -29,13 +29,16 @@ ul {line-height: 1}
   margin: 20px}
   
 .photo {
-  padding: 25px;
   max-width:175px;
   width:200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 5px solid #737373;
   }
+figcaption{font-size: 13px}
 
 .sect1{line-height: .01}
 
