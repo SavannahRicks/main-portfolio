@@ -43,11 +43,7 @@
         the TEI <title>Guidelines</title> in which the module being referenced is defined. Note that
         the modules are generally referred to in the order defined, with the exception that the
         module for <title level="a">Simple Analytic Mechanisms</title> is referred to before the
-        module for <title level="a">Dictionaries</title>. This is because the class <name
-          type="class">att.lexicographic.normalized</name> (which is defined in <name type="module"
-          >analysis</name>) needs to be specified before the class <name type="class"
-          >att.lexicographic</name> (which is defined in <name type="module"
-        >dictionaries</name>).</p>
+        module for <title level="a">Dictionaries</title>. This is because the class <name type="class">att.lexicographic.normalized</name> (which is defined in <name type="module">analysis</name>) needs to be specified before the class <name type="class">att.lexicographic</name> (which is defined in <name type="module">dictionaries</name>).</p>
       <p>The first four modules are often called the <soCalled>required</soCalled> modules. However,
         these modules are not themselves technically required to create a TEI conformant markup
         language (let alone a useful non-TEI conformant markup language). Rather, they each contain
@@ -55,8 +51,7 @@
       <schemaSpec ident="tei_all" start="TEI teiCorpus" prefix="tei_" targetLang="en" docLang="en">
         <moduleRef n="01" key="tei"/>
         <moduleRef n="02" key="header" except="abstract appInfo"/>
-        <moduleRef n="03" key="core"
-          except="analytic cb divGen email headItem headLabel index meeting monogr rb relatedItem rt ruby sp speaker stage add bibl biblScope biblStruct choice cit citedRange pb postBox postCode"/>
+        <moduleRef n="03" key="core" except="analytic cb divGen email headItem headLabel index meeting monogr rb relatedItem rt ruby sp speaker stage add bibl biblScope biblStruct choice cit citedRange postBox postCode"/>
         <moduleRef n="04" key="textstructure"/>
 
         <moduleRef n="06" key="verse"/>
