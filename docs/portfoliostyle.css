@@ -78,7 +78,14 @@ figcaption{font-size: 13px}
   }
   .ref h3 {text-align: center}
   .ref p {text-indent: 50px;}
-  
+  .ref figure img{max-width:175px;
+  max-width:80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 5px solid #737373;}
 
 .cent {text-align: center}
 
