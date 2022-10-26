@@ -1,103 +1,128 @@
-body {background-color:#ffddcc;
-font-family: "Monaco", monospace;}
+body {
+    background-color: #ffddcc;
+    font-family: "Monaco", monospace;
+}
+p {
+    word-spacing: 4px;
+    font-size: 17px;
+    text-align: justify}
+nav {
+    text-align: center;
+    padding: 10px}
+h1 {
+    padding: 0px 10px 10px 100px;
+    font-size: 250%}
+h2 {
+    text-align: center;
+    font-size: 35px}
+h3 {
 
+    font-size: 30px;
+    text-align: center}
+h4 {
+    padding-left: 40px;
+    font-size: 15px}
+ul {
+    line-height: 1
+}
+figcaption {
+    font-size: 13px;
+    text-align: center;
+}
 
-p{word-spacing: 4px;
-font-size: 17px}
-nav {text-align : center;
-padding: 10px}
-h1 {padding: 0px 10px 10px 100px;
-font-size:250%}
-h2 {text-align: center;
-font-size: 35px}
-h3 {padding-left: 25px;
-font-size: 30px}
-h4 {padding-left: 40px;
-font-size:15px}
-ul {line-height: 1}
-
-
-
-.head {padding: 0px 10px 10px 100px;
-  font-size:250%}
+.head {
+    padding: 0px 10px 10px 100px;
+    font-size: 250%}
 
 .post {
-  background-color: #ffffe6;
-  width: 300px;
-  border: 15px solid #e6e6ff;
-  padding: 50px 20px 50px 20px;
-  margin: 20px}
-  
-.photo {
-  max-width:175px;
-  width:200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 5px solid #737373;
-  }
-figcaption{font-size: 13px}
+    float: left;
+    background-color: #ffffe6;
+    width: 300px;
+    border: 15px solid #e6e6ff;
+    padding: 50px 20px 50px 20px;
+    margin: 20px;
+}
 
-.sect1{line-height: .01}
+.photo {
+    max-width: 175px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 5px solid #737373;
+}
+
 
 .sect2 {
-  text-align:center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #ffffe6;
-  width: 1000px;
-  border: 5px solid #e6e6ff;
-  padding: 50px 20px 50px 20px;
-  }
-  
-.res {
-  text-align:left;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #ffffe6;
-  width: 1000px;
-  border: 5px solid #e6e6ff;
-  padding: 10px 20px 50px 20px;}
-  
-  .res div h3 {padding:8px 0px 0px 0px;
-  text-decoration:underline;
-  line-height: .1}
-  
-.ref {text-align:left;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #ffffe6;
-  width: 1000px;
-  border: 5px solid #e6e6ff;
-  padding: 10px 20px 50px 20px;
-  }
-  .ref h3 {text-align: center}
-  .ref p {text-indent: 50px;}
-  .ref figure img{max-width:175px;
-  max-width:80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 5px solid #737373;}
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffe6;
+    width: 1000px;
+    border: 5px solid #e6e6ff;
+    padding: 50px 20px 50px 20px;
+}
 
-.cent {text-align: center}
+.res {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffe6;
+    width: 1000px;
+    border: 5px solid #e6e6ff;
+    padding: 10px 20px 50px 20px;
+}
+
+.res div h3 {
+    padding: 8px 0px 0px 0px;
+    text-decoration: underline;
+    line-height: .1;
+    text-align: left;
+}
+.ref {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffe6;
+    width: 1000px;
+    border: 5px solid #e6e6ff;
+    padding: 10px 20px 50px 20px;
+}
+.ref h3 {
+    text-align: center
+}
+.ref p {
+    text-indent: 50px;
+}
+.ref figure img {
+    max-width: 175px;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 5px solid #737373;
+}
+
+.cent {
+    text-align: center
+}
 
 .button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    background-color: #a3a3c2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
