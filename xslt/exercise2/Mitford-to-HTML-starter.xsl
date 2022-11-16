@@ -7,49 +7,38 @@
     <xsl:output method="xhtml" html-version="5" omit-xml-declaration="yes" 
         include-content-type="no" indent="yes"/>
     
-   <xsl:template match="/">
+   <xsl:template match="/"> <!-- entire doc transcribed in here -->
        <html>
            <head>
                <title>Organizations in Digital Mitford</title>
+               <!-- where css link will go -->
+               <link rel="stylesheet" type="text/css" href="style.css"/>
            </head>
            <body>
                <h1>Digital Mitford Lists of Organizations</h1> 
-               <!--ebb: XPath shows us we have three <listOrg> elements in the si-modified.xml source document. 
-                   Let's set up ONE numbered list for the OUTER list using HTML's <ol> element.
-               In HTML, an <ol> looks like this: 
-                   <ol>
-                       <li>List 1 heading</li>
-                       <li>List 2 heading</li>
-                       <li>List 3 heading</li>
-                   </ol>
-               -->
               <ol>
                    <xsl:apply-templates select="descendant::listOrg"/>
                </ol> 
            </body> 
-           
        </html>
    </xsl:template> 
+ 
+ 
+<xsl:template match="listOrg">
+    <li><xsl:apply-templates select="child::head"/>
+    <ul>
+        <xsl:apply-templates select="child::org"/>
+    </ul>
+    </li>
+</xsl:template>
     
-   <!-- ebb: Now, write new template rules to 
-       1) Handle processing of each listOrg, 
-      to output the heading and create an internal bulleted list with <ul> every time it processes a listOrg element. 
-       2) Handle processing of the organization list items for each internal list.
-   -->
- <xsl:template match="listOrg">
-     <li>
-     <xsl:apply-templates select="child::head"/>
-         <ul>
-             
-             
-             
-         </ul>
-         
-     </li>
-     
- </xsl:template>
- 
- 
- 
+    
+
+    
+    
+    <xsl:template match="org">
+        <li><xsl:apply-templates select="child::orgName"/>
+        </li>
+    </xsl:template>
     
 </xsl:stylesheet>

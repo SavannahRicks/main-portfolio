@@ -1,0 +1,43 @@
+body {background: #bfbfbf}
+
+h1 {}
+h2 {text-decoration:none}
+
+/* Shadow for Event
+ * 
+ * Underline for Item
+ * 
+ * Highlights Characters
+ *      red = evil
+ *      yellow = neutral
+ *      green = good
+ * 
+ * Italic for Epithet
+ * 
+ * Colored Box Factions
+ *      red = evil
+ *      yellow = neutral
+ *      green = good
+ * 
+ * Bold for Location
+ */
+ 
+ 
+ .event {text-shadow: 2px 2px 5px;}
+ 
+ .item {text-decoration: underline;
+ text-decoration-style: wavy;
+ }
+ .good {background-color: #b3ffb3 ;
+}
+ .neutral {background-color: #b3d1ff ;
+}
+ .evil {background-color: #ff8080;
+}
+ .epithet {font-style: oblique;}
+ 
+ .faction {border-style: solid;}
+ 
+ .location {font-style: oblique;}
+ 
+ 
