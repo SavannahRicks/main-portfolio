@@ -29,12 +29,20 @@
                             <th>Places Mentioned</th>
                         </tr>
                         
-                        <xsl:apply-templates select="$travelColl//letter" mode="toc"/>
+                        <xsl:apply-templates select="$travelColl//letter" mode="toc">
+                            <xsl:sort select="//@when"/>
+                        </xsl:apply-templates>
+                            
+                            
                     </table>
                 </section>
 
                 <section id="fulltext">
-                    <xsl:apply-templates select="$travelColl//letter"></xsl:apply-templates>
+                    <xsl:apply-templates select="$travelColl//letter">
+                        <xsl:sort select="//@when"/>
+                    </xsl:apply-templates>
+                    
+                    
                 </section>
             </body>
         </html>

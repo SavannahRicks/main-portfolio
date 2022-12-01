@@ -16,10 +16,10 @@
             <head>
                 <title>Behrend Travel Letters</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="stylesheet" type="text/css" href="webstyle.css"/>
+                <link rel="stylesheet" type="text/css" href="web-out/webstyle.css"/>
             </head>
             <body>
-                <h1>Behrend's Travel Adventures in France</h1>
+                <h1>Behrend's Travel Adventures in Europe</h1>
                 <section id="toc">
                     <h2>Contents</h2>
                     <table>
@@ -29,12 +29,20 @@
                             <th>Places Mentioned</th>
                         </tr>
                         
-                        <xsl:apply-templates select="$travelColl//letter" mode="toc"/>
+                        <xsl:apply-templates select="$travelColl//letter" mode="toc">
+                            <xsl:sort select="//@when"/>
+                        </xsl:apply-templates>
+                            
+                            
                     </table>
                 </section>
 
                 <section id="fulltext">
-                    <xsl:apply-templates select="$travelColl//letter"></xsl:apply-templates>
+                    <xsl:apply-templates select="$travelColl//letter">
+                        <xsl:sort select="//@when"/>
+                    </xsl:apply-templates>
+                    
+                    
                 </section>
             </body>
         </html>
@@ -46,10 +54,15 @@
    
    <xsl:template match="letter" mode="toc">
        <tr>
-           <td><xsl:apply-templates select="//letter/dateLine/date/@when !string() => sort() => min()"/></td>
+           <td><a href="#{@xml:id}"><xsl:apply-templates select="(.//date/@when)[1]"/></a>
+               <xsl:value-of select=".//p[1] ! substring(., 1, 80)" />
+           </td>
            <td>
-               <xsl:apply-templates select="//letter//persName ! substring(., 1)"/></td>
-           <td><xsl:apply-templates select="//letter//placeName ! substring(., 1)"/></td>
+               <xsl:apply-templates select="//letter//persName ! substring(., 1)"/>
+           </td>
+           <td>
+               <xsl:apply-templates select=".//placeName ! normalize-space()=> distinct-values() => sort() => string-join(', ')"/>
+           </td>
            
        </tr>
    </xsl:template>
@@ -57,13 +70,12 @@
     <!-- ************************************************* -->
     <!-- ebb: templates for outputting the text of the letters -->
     <!-- ************************************************* -->
-    
     <xsl:template match="letter">
-        <p>
+        <div id="{@xml:id}">
             <xsl:apply-templates/>
-        </p>
+        </div><!-- sets each letter to their xml id -->
     </xsl:template>
-    <xsl:template match="figure">
+    <xsl:template match="p | figure">
         <p>
             <xsl:apply-templates/>
         </p>
