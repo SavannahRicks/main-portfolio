@@ -37,7 +37,7 @@ iframe {
     width: 90%;
     height: 780px;
 }
-
+/* NAV********************************************************** */
 nav#nav {
     color:#D4D6B9;
     margin: 0;
@@ -45,6 +45,7 @@ nav#nav {
 }
 
 nav {
+    min-width: 70%;
     width: 100%;
     margin: 0;
 }
@@ -197,6 +198,8 @@ nav ul {
 .button:hover {background-color: #e0e0eb;
 color: black;} */
 
+
+/* IMDEX BUTTONS******************************************************** */
 .indexbut {
     background-color: #383B53;
     color: #D4D6B9;
@@ -216,11 +219,7 @@ color: black;} */
     color: #D4D6B9;
 }
 
-.block2 {
-    display: flex;
-    background-color: #383B53;
-    width: 40%;
-}
+
 
 .indexbut2 {
     background-color: #383B53;
@@ -240,7 +239,12 @@ color: black;} */
     background-color: #32213A;
     color: #D4D6B9;
 }
-
+.block2 {
+    display: flex;
+    background-color: #383B53;
+    width: 54.5%;
+    min-width: 800px;
+}
 body#TOP a {background-color: #383B53;
     border: 5px black;
     color: #D4D6B9;
@@ -266,4 +270,20 @@ table, td, th {
 table {
   width: 100%;
   border-collapse: collapse;
+}
+/* GAME******************************************************************** */
+.game {text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D1CAA1;
+    width: 1000px;
+    border: 5px solid #383B53;
+    padding: 10px 20px 50px 20px;}
+
+.game div h3 {
+    padding: 8px 0px 0px 0px;
+    text-decoration: underline;
+    line-height: .1;
+    text-align: left;
 }
