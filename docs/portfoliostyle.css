@@ -37,6 +37,7 @@ iframe {
     width: 90%;
     height: 780px;
 }
+img {max-width: 1000px;}
 /* NAV********************************************************** */
 nav#nav {
     color:#D4D6B9;
