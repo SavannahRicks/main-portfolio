@@ -1,0 +1,2 @@
+phrase = "hello"
+print(phrase)
