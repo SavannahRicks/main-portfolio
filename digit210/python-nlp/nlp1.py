@@ -5,13 +5,13 @@
 
 import spacy
 # Need line 8 the first time: Then comment it out after the first time you run it:
-nlp = spacy.cli.download("en_core_web_sm")
+# nlp = spacy.cli.download("en_core_web_sm")
 nlp = spacy.load('en_core_web_sm')
 
 avatarSpeeches = open('avatarSpeeches.txt', 'r', encoding='utf8')
 words = avatarSpeeches.read()
 wordstrings = str(words)
-print(wordstrings)
+# print(wordstrings)
 
 # count=0
 # for w in words:
@@ -35,7 +35,6 @@ for token in avatarWords:
 # for token in nlpGrimm:
     #print the token and its part of speech tag from spacy
     # print(token.text, "--->", token.pos_)
-
 
 
 
