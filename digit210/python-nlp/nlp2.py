@@ -3,8 +3,7 @@ import spacy
 nlp = spacy.load('en_core_web_md')
 import os
 workingDir = os.getcwd()
-print("current working directory: " + workingDir)
-# python-nlp is a directory
+print("current working directory: " + workingDir)    # python-nlp is a directory
 
 insideDir = os.listdir(workingDir)
 print("inside this directory are the following files AND directories: " + str(insideDir))
@@ -17,9 +16,10 @@ def readTextFiles(filepath):    # readTextFiles can be named anthing
         # print(stringFile)
 
         tokens = nlp(stringFile)
-        # playing with vectors here
+
         vectors = tokens.vector_norm
         print(vectors)
+        print(tokens)
 
 
 
