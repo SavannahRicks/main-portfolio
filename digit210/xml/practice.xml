@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml><prompt>crochet pattern for a sweater for a cat</prompt>
+    
+    <title><h1>Here is a simple crochet pattern for a sweater for a cat:</h1></title>
+    
+    <mat><h2>Materials:</h2>
+    
+    <yarn>Worsted weight yarn in a color of your choice</yarn>
+    <hook>Crochet hook in a size appropriate for the yarn (check the label on the yarn for a recommended hook size)</hook>
+    <needle>Yarn needle</needle></mat>
+    <abrev><h2>Abbreviations:</h2>
+    
+    <st type="chain"><ab>ch </ab>= <name>chain</name></st>
+    <st type="single_crochet"><ab>sc </ab>= <name>single crochet</name></st>
+    <st type="slip_stitch"><ab>sl st </ab>= <name>slip stitch</name></st>
+    <st type="stitch"><ab>st </ab>= <name>stitch</name></st></abrev>
+    <instr><h2>Instructions:</h2>
+    
+    <step num="1"><st type="chain" num="20">Chain 20</st>.</step>
+    <step num="2"><row num="1">Row 1</row>: <st type="single_crochet">Sc </st>in second <st type="chain">chain </st>from hook and in each <st type="chain">chain</st> across, turn. (<st type="single_crochet" num="19">19 sc</st>)</step>
+    <step num="3"><row num="2">Row 2</row>: <st type="chain" num="1">Ch 1</st>, <st type="single_crochet">sc </st>in each st across, turn.</step>
+    <step num="4">Repeat <row num="2">Row 2 </row>until the piece measures <len type="inches" num="8">8 inches </len>in length.</step>
+    <step num="5">Fold the piece in half lengthwise, with the right sides facing each other.</step>
+    <step num="6">Join the two sides together by working <st type="single_crochet">single crochets </st>through both layers, as follows: Insert your hook through both layers, yarn over, and pull up a loop. Yarn over and pull through both loops on the hook. Repeat this process until you have joined the two sides together.</step>
+    <step num="7">Cut the yarn and weave in the ends with a yarn needle.</step>
+    <step num="8">To put the sweater on your cat, slip it over their head and adjust the fit as necessary. You may want to add a button or other closure to keep the sweater in place.</step></instr>
+    
+    <conc>I hope this pattern is helpful and your cat enjoys their new sweater!</conc></xml>
