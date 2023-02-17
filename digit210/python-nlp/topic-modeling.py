@@ -17,7 +17,7 @@ print(f"{stop_words=}")
 print(f"{string.punctuation=}")
 
 
-newStopWords = ["said", "one", "go", "went", "came", "like", "one"]
+newStopWords = ["said", "one", "go", "went", "came", "like", "one", "dont"]
 stop_words.extend(newStopWords)
 print("UPDATED: " + f"{stop_words=}")
 
@@ -79,62 +79,25 @@ id2word = corpora.Dictionary(cleaned_docs)
 corpus = [id2word.doc2bow(cleaned_doc) for cleaned_doc in cleaned_docs]
 print(corpus)
 
-# Show the words and numbers in just the first document:
-# for num in corpus[0]:
-#     num = num[0]
-#     print(f"{num}\t{id2word[num]}")
-
-# TOPIC MODELING with LDA ########################
-# ebb: Here in the next line, we set the parameters for LDA topic modeling.
-# This is sometimes compared to rolling dice, because we start the process by
-# predicting the number of topics we expect to see in the results.
-# You can take this backwards and forwards and see how it affects the distribution and
-# assignment of topics in the corpus. The num_topics is the parameter you keep adjusting.
-# In this assignment I'd like you to:
-#   * Try a few different num_topics and notice how that changes
-# your results. Find a number you think works well for showing topics in this corpus.
-#   * Also, I'd like you to experiment with adjusting the stop_words list (above) when you see a lot
-# of the same words repeating across topics.
-lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=30)
+lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=10)
 # Suggestion: Try 10 - 50 topics and vary in 5s
 topics = lda_model.get_document_topics(corpus)
 print(f"{len(topics)=}")
 # ebb: len(topics) appears to be the number of documents. There are
 # 209 documents in the Grimm collection.
 print(f"{topics[2]=}")
-# topics[208] represents the topics in document 209. Remember why?
-# Notice our format string: called "f-printing":
-# This comes out:
-# topics[208]=[(20, 0.11845379), (66, 0.015097282), (74, 0.118847124), (76, 0.31761664), (82, 0.42932528)]
-# Topics is a dictionary with the keys as the document numbers and values are the
-# list of topics for that document. The values are tuples: (Topic number, weight of topic).
-# HEY, don't we want to sort these by weight?
-sorted_topics = sorted(topics[2], key=lambda x: x[1], reverse=True)
-# This says, sort the topics, and the sort key is x, and then you'll get the second member
-print(f"{sorted_topics=}")
-# ebb: Notice, every time we run this, we get a different random assortment of topics present in the document we chose.
-# Our returns here are a sign of the randomization built into LDA topic modeling!
 
-# ebb: So, let's see what's in a topic:
+sorted_topics = sorted(topics[2], key=lambda x: x[1], reverse=True)
+
+print(f"{sorted_topics=}")
+
 for topic in topics[2][:10]:
     print(f"{topic=}")
-    # if topic[1] > .5:
-    # This asks for up to 10 topics in document 209. It'll be fine if 10 topic clusters aren't really available there.
     terms = lda_model.get_topic_terms(topic[0], 15)
-    # topic[0] is not the same as topics. (topics are documents). topic is an actual topic.
-    # topic[0] is probably the heaviest weighted "top" topic.
     for num in terms:
         num = num[0]
         print(num, id2word[num])
     print()
 
-# ###### VISUALIZING THE TOPIC MODELS ####################
-# ebb: We're using the pyLDAvis (python LDA topic modeling vis) library to output an HTML file
-# that shows an interactive visualization. It will output an HTML file in your working directory.
-# You want to go and open that file in a web browser to view the model and adjust it.
-# HOW TO READ THE LDA Visualization:
-# See https://we1s.ucsb.edu/research/we1s-tools-and-software/topic-model-observatory/tmo-guide/tmo-guide-pyldavis/
-# As you inspect the visualization, you should come back to this script and
-# experiment with adding stop words and adjusting the number of topics to model.
 vis = pyLDAvis.gensim_models.prepare(lda_model, corpus, id2word, mds="mmds", R=30)
 pyLDAvis.save_html(vis, 'topicModel_Visualization.html')
