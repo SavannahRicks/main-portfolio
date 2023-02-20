@@ -1,0 +1,25 @@
+start = xml
+xml = element xml {prompt, title, mat, abrev, instr, conc}
+
+prompt = element prompt{text}
+title = element title{h1}
+h1 = element h1{text}
+
+mat = element mat{h2, yarn, hook, needle}
+h2 = element h2{text}
+yarn = element yarn{text}
+hook = element hook{text}
+needle = element needle{text}
+
+abrev = element abrev{h2?, st+}
+st = element st{mixed{type, ab?, name?, num?}, text}
+type = attribute type{text}
+ab = element ab{text}
+name = element name{text}
+
+instr = element instr{h2?, step+}
+step = element step {mixed{(num, st*, row*, len*)}, text}
+num = attribute num{xsd:integer}
+row = element row{num, text}
+len = element len{type, num, text}
+conc = element conc{text}
