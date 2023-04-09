@@ -1,0 +1,33 @@
+RgEx2:
+
+
+Find:	THE.+
+Replace: <xml>\0</xml>
+
+Find: (<xml>)(THE SONNETS)
+Replace: \1<title>\2</title>
+
+Find: \s\s(.+)\n
+Replace: <line>\1</line>\n
+
+Find: <line>\s([IVXCL]+)</line>
+Replace: </sonnet>\n\n<sonnet num="\1">\1
+
+I fix any errors in the beginning and end of the document
+
+Find: (">)[IVXCL]+
+Replace: \1
+
+Find: (">)\s\s[IVXCL]+
+Replace: \1
+
+Find: (>)\s\s[IVXCL]+(<)
+Replace: \1\2
+
+Find: <line>\s\s([IVXCL]+)</line>
+Replace: </sonnet><sonnet num="\1">
+
+At this point I saw that there wasn't any </sonnet> for some reason
+
+Find: <sonnet
+Replace: </sonnet>\n\n\0

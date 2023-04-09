@@ -1,0 +1,31 @@
+RegEx1
+
+Find: &
+Replace: &amp;
+
+Find: ^.+
+Replace: <xml>\n\0\n</xml>
+
+Find: \n(.+)
+Replace: <movie>\1</movie>\n
+
+Find: (</movie>)(\t)(.+?)(\t)
+Replace:\1\2<name>\3</name>\4
+
+Find: (</name>)(\t)(\d+)(\t)
+Replace:\1\2<year>\3</year>\4
+
+Find: (</year>\t)(.+)(\t)
+Replace: \1<cont>\2</cont>\3
+
+Find: (</cont>\t)(\d+)(\s)(.+)(</movie)
+Replace: \1<time \4="\2">\2\3\4</time>\5
+
+Find: (</cont>\t)[^<time>]
+
+Find: (</cont>\t)(N/A)
+Replace: \1<time>\2</time>
+
+Tagged 'year' with <year>
+Tagged 'country' with <cont>
+Tagged 'runtime' with <time>

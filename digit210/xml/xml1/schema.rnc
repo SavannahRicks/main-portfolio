@@ -18,7 +18,7 @@ ab = element ab{text}
 name = element name{text}
 
 instr = element instr{h2?, step+}
-step = element step {mixed{(num, st*, row*, len*)}, text}
+step = element step {mixed{num, st*, row*, len*}, text}
 num = attribute num{xsd:integer}
 row = element row{num, text}
 len = element len{type, num, text}

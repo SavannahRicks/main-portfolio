@@ -1,0 +1,10 @@
+1: a: When having "Dot Matches all" off it finds 325 items with either one liners or the last line to a paragraph highlighted, but with the setting turned on, the same amount of items are found but every single line is highlighted but sectioned off by paragraph. Since the Replace window wants to place the findings into <sp> tags, I'd keep this setting on so that each body of text is wrapped by <sp> instead of just the last line.
+
+   b: In the find window, we use parenthesis to save th einformation we are trying to find. And depending on how many pairs of parenthesis there are, determines the labeling of \1, \2, \3,... and where to use them in the replace window.
+
+
+2: I assume that all the stage directions are all the texts in parenthesis, so I used \(.+\) to find and select the parenthesis and its contents. It's not perfect so I would also use \(.+\).+\( to find the few lines that had two stage directions in the script and fix them. For some reason the first expression woudl select text in between two sets of parenthesis. I ended up not using the Dot Matches all in my expression, the first half of figuring out this question I had it on initially but it kept messing me up. And for the replace window I used <stdir>\0</stdir>
+
+3: For finding the speakers I used ([A-Z]+)(:\s) and for the replace I used <speaker>\1</speaker>\2. I didn't used Dot Matches all or a dot in this expression.
+
+4: I used ^.+ for the Find window and <xml>\0</xml> in the replace window with Dot Matches all turned on to highlight the whole document as one selection, then I fixed the beginning <xml> tag to not include line 1 of the document.

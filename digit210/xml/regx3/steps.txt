@@ -1,0 +1,24 @@
+RegEx 3
+
+Find: \n{3,}
+Replace: \n\n
+
+Find: ^.+
+Replace: <p>\0</p>
+
+-fixed begining <xml> tag
+-pretty printed
+
+Find: <p>(CHAPTER\s)([IVXCL]+)</p>
+Replace: </chapter>\n\n<chapter num="\2">\1\2
+
+Find: ([^=])(".+?")
+Replace: \1<q>\2</q>
+
+-took out quote tags in line 1
+
+Find: ([\d]+)(\s)([A-Z][a-z]+)
+Replace: <date when="\1_\3">\1\2\3</date>
+
+
+

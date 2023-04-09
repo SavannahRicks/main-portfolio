@@ -1,0 +1,61 @@
+Afghanistan : GPE
+  did this print too? #5 --- America : GPE
+  did this print too? #5 --- American : NORP
+  did this print too? #5 --- Andrew The Social Network : ORG
+  did this print too? #5 --- Arab : NORP
+  did this print too? #5 --- BoJack-- : GPE
+  did this print too? #5 --- Christian : NORP
+  did this print too? #5 --- Cincinnati : GPE
+  did this print too? #5 --- Confederate : ORG
+  did this print too? #5 --- Congress : ORG
+  did this print too? #5 --- Disney : ORG
+  did this print too? #5 --- Entertainment Weekly : ORG
+  did this print too? #5 --- Golden Globes : ORG
+  did this print too? #5 --- Hollywood : GPE
+  did this print too? #5 --- House : ORG
+  did this print too? #5 --- Hungry Hungry Hippos : ORG
+  did this print too? #5 --- It-- : ORG
+  did this print too? #5 --- Italian : NORP
+  did this print too? #5 --- Japanese : NORP
+  did this print too? #5 --- Jelly : ORG
+  did this print too? #5 --- Jew : NORP
+  did this print too? #5 --- Jose : GPE
+  did this print too? #5 --- Kazaz : GPE
+  did this print too? #5 --- Lexus : ORG
+  did this print too? #5 --- MSNBSea : ORG
+  did this print too? #5 --- Malibu : GPE
+  did this print too? #5 --- McBeal : ORG
+  did this print too? #5 --- Mexican : NORP
+  did this print too? #5 --- Mexico City : GPE
+  did this print too? #5 --- Navy : ORG
+  did this print too? #5 --- New York : GPE
+  did this print too? #5 --- Phoenix : GPE
+  did this print too? #5 --- Sabrinafrom Horsin' Around : ORG
+  did this print too? #5 --- Secretariat : ORG
+  did this print too? #5 --- Sextina Aquafina : ORG
+  did this print too? #5 --- Silver Lake : GPE
+  did this print too? #5 --- Slovakian : NORP
+  did this print too? #5 --- Spanish][laughter][cheering][laughter]SeÃ±or Horseman : ORG
+  did this print too? #5 --- Star Search : ORG
+  did this print too? #5 --- Swamp Monsters : ORG
+  did this print too? #5 --- TV]â™ : ORG
+  did this print too? #5 --- VH1 : ORG
+  did this print too? #5 --- Yankee : GPE
+  did this print too? #5 --- blares]We : ORG
+  did this print too? #5 --- dibs : ORG
+  did this print too? #5 --- doorbell ringing]Who : ORG
+  did this print too? #5 --- horsin : GPE
+  did this print too? #5 --- music]â : ORG
+  did this print too? #5 --- music]â™ : ORG
+  did this print too? #5 --- music]â™ª â™ªâ™ª Back : ORG
+  did this print too? #5 --- the Navy SEAL.[grunting]Wait : ORG
+  did this print too? #5 --- the Panama Canal : FAC
+  did this print too? #5 --- the South Pole : LOC
+  did this print too? #5 --- ™ª â™ªBoJack!Oh : ORG
+  did this print too? #5 --- ™ªUgh.â™ª Jellicles : ORG
+  did this print too? #5 --- ™ªâ™ : ORG
+  did this print too? #5 --- ™ªâ™ª BoJack â : ORG
+  did this print too? #5 --- ™ªâ™ª Exec : ORG
+  did this print too? #5 --- ™ªâ™ª â™ : ORG
+  did this print too? #5 --- ™ªâ™ª â™ªâ™ : ORG
+  did this print too? #5 --- 
