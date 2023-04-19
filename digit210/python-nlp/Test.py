@@ -15,7 +15,7 @@ print('inside workingDir is: ' + str(insideDir))
 
 CollPath = os.path.join(workingDir, 'bojack-files')
 print('CollPath is: ' + str(CollPath))
-TargetPath = 'bojack-output'
+TargetPath = os.path.join(workingDir,'bojack-output')
 
 #########################################################################################
 # ebb: After reading the sorted dictionary output, we know spaCy is making some mistakes.
@@ -102,7 +102,7 @@ def assembleAllNames(CollPath):
         if file.endswith(".xml"):
             filepath = f"{CollPath}/{file}"
 
-            eachFileDict = readTextFiles(filepath)
+            eachFileDict = readTextFiles(filepath)  # sends to readTextFiles
             print(f"{eachFileDict=}" + " ----------- Did this print #3")
             AllNames.update(eachFileDict)
             # ebb: The line above adds each file's new NLP data to the dictionary.
