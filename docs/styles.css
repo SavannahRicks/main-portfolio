@@ -1,0 +1,121 @@
+
+
+
+body {
+    background-color: #98D8AA;
+    z-index: 1;
+}
+.main {
+    width: 70%;
+    height: 100%;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    top: 119px;
+    right: 10%;
+    left: 10%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+h1 {
+    font-family: "Roboto Condensed";
+    text-align: center;
+}
+h2 {
+    font-family: "Roboto Condensed";
+    text-align: center;
+}
+h3 {
+    font-family: "Roboto Condensed";
+    text-align: center;
+}
+h4 {
+    font-family: "Roboto Condensed";
+}
+p{
+    font-family: "Roboto Condensed";
+}
+
+img {
+    min-width: 500px;
+    margin-left: 33%;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF6D60;
+    z-index: 3;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbut {
+    background-color: #FF6D60;
+    color: black;
+    border: none;
+    padding: 50px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Roboto Condensed"
+}
+
+.navbut:hover {
+    background-color: #F7D060;
+    color: black;
+}
+
+a {
+    margin-left: 2%;
+    color: black;
+}
+h1 {
+    font-size: 250%;
+    text-indent: 3%;
+    padding: 25px 20px 25px 10px;
+    line-height: 31px;
+    float: left;
+    margin: auto;
+}
+h2 {
+    font-size: 200%;
+    background-color: #F7D060;
+    border: none;
+    border-radius: 15px;
+    padding: 1% 0%;
+    width: 40%;
+    min-width: 155px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+}
+
+h3 {
+    position: relative;
+    width: 33%;
+    top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+h4 {
+    font-size: 150%;
+    position: relative;
+    top: 20px;
+    margin: 5% 0;
+    width: auto;
+
+}
+.data {
+    margin: 5%;
+}
