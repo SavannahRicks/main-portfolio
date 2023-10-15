@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../portfoliostyle.css" type="text/css"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg  xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+    
+    <ellipse class="grey" cx="150" cy="80" rx="80" ry="60"
+        style="stroke:purple;stroke-width:0" />
+    <circle class="yellow" cx="120" cy="70" r="10"  />
+    <circle class="yellow" cx="180" cy="70" r="10"  />
+    <polygon class="pink" points="150,100 140,85 160,85" />
+    <polygon class="grey" points="100,10 80,55 140,35" style="stroke-color:black;stroke:2;" />
+    <polygon class="grey" points="200,10 222,55 175,35" style="stroke-color:black;stroke:2;" />
+</svg> 

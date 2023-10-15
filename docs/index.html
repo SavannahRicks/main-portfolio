@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="portfoliostyle.css" />
     <script type="text/javascript" src="simple.js">/**/</script>
   </head>
-  <body>
+  <body class="light"><!-- JS Ex2 class toggle -->
     <h1 class="head">Savannah's Blog</h1>
     <h2>Home</h2>
     <div>
@@ -47,6 +47,34 @@
         decide on Penn State.</p>
     </div>
     <button type="button">Click Me!</button>
+    <!-- ******Checkbox HTML********************************************************* -->
+    <div>
+      <fieldset>
+        <legend>Click to Highlight:</legend>
+        <input type="checkbox" id="LightBG"/><!-- Checkbox -->
+        <span>Lighter Background</span><!-- box label -->
+        <input type="checkbox" id="wide"/>
+        <span>Wider Post</span>
+      </fieldset>
+    </div>
+    <!-- ***************************************************************** -->
+    
+    
+    
+    <svg  xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+      
+      <ellipse class="grey" cx="150" cy="80" rx="80" ry="60"
+        style="stroke:purple;stroke-width:0" />
+      <polygon class="grey" points="100,10 80,55 140,35" style="stroke-color:black;stroke:2;" />
+      <polygon class="grey" points="200,10 222,55 175,35" style="stroke-color:black;stroke:2;" />
+      <circle class="eyes" cx="120" cy="70" r="10"  />
+      <circle class="eyes" cx="180" cy="70" r="10"  />
+      <polygon class="nose" points="150,100 140,85 160,85" />
+      <rect id="lid1" class="grey" x="105" y="30" width="30" height="30" style="stroke-width:0;stroke:black" />
+      <rect id="lid2" class="grey" x="165" y="30" width="30" height="30" style="stroke-width:0;stroke:black" />
+      
+    </svg> 
+    
     
     
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam lacus a erat
