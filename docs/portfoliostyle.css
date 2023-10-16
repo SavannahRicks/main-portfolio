@@ -337,25 +337,25 @@ table {
     --pink: #eac7dd;
 
 }
-.grey {
+g .grey {
     fill: var(--grey)
 }
 
-.eyes {
+g .eyes {
     fill: var(--yellow);
 }
 
-.nose {
+g .nose {
     fill: var(--pink);
 }
 
-#lid1, #lid2 {transition: all 1s ease;}
-svg:hover #lid1 {
+g #lid1, #lid2 {transition: all 1s ease;}
+g:hover #lid1 {
     transition: all 1s ease;
     transform: translate(0%, 10%)
 }
 
-svg:hover #lid2 {
+g:hover #lid2 {
     transition: all 1s ease;
     transform: translate(0%, 10%)
 }
